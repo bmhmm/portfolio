@@ -578,7 +578,7 @@ export default function ParticleBackground({
       className={`relative overflow-hidden ${className}`}
       style={{
         background: "radial-gradient(ellipse at 50% 100%, #050d1a 0%, #020810 40%, #000508 100%)",
-        minHeight: "100vh",
+        minHeight: "1vh",
       }}
     >
       {/* Ambient depth */}
