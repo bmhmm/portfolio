@@ -622,6 +622,7 @@
 
 import { useEffect, useRef, useState, useCallback } from "react";
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from "framer-motion";
+import {Send} from "lucide-react";
 
 // ─── Font import ──────────────────────────────────────────────────────────────
 // Add to your layout.tsx or globals.css:
@@ -678,9 +679,10 @@ const DribbbleIcon = () => (
 );
 
 const SOCIAL_LINKS: SocialLink[] = [
-  { label: "GitHub",   href: "https://github.com",   icon: <GithubIcon />   },
+  { label: "GitHub",   href: "https://github.com/bmhmm",   icon: <GithubIcon />   },
   { label: "LinkedIn", href: "https://linkedin.com", icon: <LinkedInIcon /> },
   { label: "Twitter",  href: "https://twitter.com",  icon: <TwitterIcon />  },
+  {label: "Telegram",  href: "https://t.me/MICHAEL_0px", icon: <Send />},
   { label: "Dribbble", href: "https://dribbble.com", icon: <DribbbleIcon /> },
 ];
 
@@ -1073,7 +1075,7 @@ export default function HeroSection() {
 
       <section
         ref={sectionRef}
-        id="hero"
+        id="home"
         className="relative flex items-center overflow-hidden"
         style={{
           minHeight: "100dvh",
