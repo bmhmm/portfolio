@@ -12,6 +12,7 @@ import {
 } from "react";
 import { motion, AnimatePresence, useMotionValue, useSpring } from "framer-motion";
 
+
 // ─── Font import ──────────────────────────────────────────────────────────────
 const FONT_IMPORT = `@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=IBM+Plex+Mono:wght@300;400&display=swap');`;
 

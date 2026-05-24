@@ -8,6 +8,8 @@ import ExperienceSection from "@/components/sections/ExperienceSection";
 import BrainMode from "@/components/effects/BrainMode";
 import FloatingTechWords from "@/components/effects/FloatingTechWords";
 import CursorGlow from "@/components/effects/CursorGlow";
+import ContactSection from "@/components/sections/ContactSection";
+import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +24,8 @@ export default function Home() {
       <ProjectsSection />
       <ExperienceSection />
       <BrainMode  />
+      <ContactSection />
+      <Footer/>
     </main>
   );
 }
