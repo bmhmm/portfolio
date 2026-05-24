@@ -621,7 +621,7 @@
 "use client";
 
 import { useEffect, useRef, useState, useCallback } from "react";
-import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { motion, AnimatePresence, useMotionValue, useSpring, useTransform} from "framer-motion";
 import {Send} from "lucide-react";
 
 // ─── Font import ──────────────────────────────────────────────────────────────

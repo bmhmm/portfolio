@@ -20,6 +20,7 @@ const NAV_LINKS: NavLink[] = [
   { label: "Skills",   href: "#skills",   section: "skills"   },
   { label: "Projects", href: "#projects", section: "projects" },
   { label: "Contact",  href: "#contact",  section: "contact"  },
+  { label: "Brain-Mode",  href: "#brain-mode",  section: "brain-mode"}, 
 ];
 
 // ─── Smooth scroll helper ─────────────────────────────────────────────────────
