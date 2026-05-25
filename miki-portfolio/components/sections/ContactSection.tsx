@@ -1,8 +1,9 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { motion, useInView, AnimatePresence } from "framer-motion";
+import { motion, useInView, AnimatePresence, Variants  } from "framer-motion";
 import { submitContactForm } from "@/services/contact.service";
+
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -30,21 +31,56 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
-  hidden: { opacity: 0, y: 28 },
+// const itemVariants = {
+//   hidden: { opacity: 0, y: 28 },
+//   visible: {
+//     opacity: 1,
+//     y: 0,
+//     transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] },
+//   },
+// };
+
+const itemVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] },
+
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
   },
 };
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 18 },
+// const fadeUp = {
+//   hidden: { opacity: 0, y: 18 },
+//   visible: (i: number) => ({
+//     opacity: 1,
+//     y: 0,
+//     transition: { delay: i * 0.08, duration: 0.55, ease: [0.22, 1, 0.36, 1] },
+//   }),
+// };
+
+const fadeUp: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.08, duration: 0.55, ease: [0.22, 1, 0.36, 1] },
+
+    transition: {
+      delay: i * 0.1,
+      duration: 0.6,
+      ease: "easeOut",
+    },
   }),
 };
 

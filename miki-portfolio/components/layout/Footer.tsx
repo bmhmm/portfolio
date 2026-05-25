@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import Link from "next/link";
 import { motion, useInView } from "framer-motion";
+import {Variants} from "framer-motion";
 
 // ─── Nav Links ─────────────────────────────────────────────────────────────────
 
@@ -56,12 +57,32 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
-  hidden: { opacity: 0, y: 14 },
+// const itemVariants = {
+//   hidden: { opacity: 0, y: 14 },
+//   visible: {
+//     opacity: 1,
+//     y: 0,
+//    transition: {
+//   duration: 0.6,
+//   ease: "easeOut",
+// }
+//   },
+// };
+
+const itemVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] },
+
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
   },
 };
 

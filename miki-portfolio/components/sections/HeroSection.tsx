@@ -621,7 +621,7 @@
 "use client";
 
 import { useEffect, useRef, useState, useCallback } from "react";
-import { motion, AnimatePresence, useMotionValue, useSpring, useTransform} from "framer-motion";
+import { motion, AnimatePresence, useMotionValue, useSpring, useTransform, Variants} from "framer-motion";
 import {Send} from "lucide-react";
 
 // ─── Font import ──────────────────────────────────────────────────────────────
@@ -693,14 +693,50 @@ const STAGGER = {
   show: { transition: { staggerChildren: 0.12, delayChildren: 0.2 } },
 };
 
-const FADE_UP = {
-  hidden: { opacity: 0, y: 32, filter: "blur(8px)" },
-  show:   { opacity: 1, y: 0,  filter: "blur(0px)", transition: { duration: 0.75, ease: [0.22, 1, 0.36, 1] } },
+// const FADE_UP = {
+//   hidden: { opacity: 0, y: 32, filter: "blur(8px)" },
+//   show:   { opacity: 1, y: 0,  filter: "blur(0px)", transition: { duration: 0.75, ease: [0.22, 1, 0.36, 1] } },
+// };
+
+const FADE_UP: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+    filter: "blur(10px)",
+  },
+
+  show: {
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+
+    transition: {
+      duration: 0.8,
+      ease: "easeOut",
+    },
+  },
 };
 
-const FADE_IN = {
-  hidden: { opacity: 0, filter: "blur(6px)" },
-  show:   { opacity: 1, filter: "blur(0px)", transition: { duration: 0.6, ease: "easeOut" } },
+// const FADE_IN = {
+//   hidden: { opacity: 0, filter: "blur(6px)" },
+//   show:   { opacity: 1, filter: "blur(0px)", transition: { duration: 0.6, ease: "easeOut" } },
+// };
+
+const FADE_IN: Variants = {
+  hidden: {
+    opacity: 0,
+    filter: "blur(10px)",
+  },
+
+  show: {
+    opacity: 1,
+    filter: "blur(0px)",
+
+    transition: {
+      duration: 0.8,
+      ease: "easeOut",
+    },
+  },
 };
 
 // ─── Animated role text ───────────────────────────────────────────────────────
