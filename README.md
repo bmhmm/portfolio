@@ -84,7 +84,7 @@ src/
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/miki-portfolio.git
+git clone https://github.com/bmhmm/miki-portfolio.git
 ```
 
 Move into the project:
