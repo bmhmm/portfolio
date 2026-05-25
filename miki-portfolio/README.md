@@ -1,36 +1,165 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Miki Portfolio
 
-## Getting Started
+A modern futuristic developer portfolio built using Next.js, TypeScript, TailwindCSS, Framer Motion, and Supabase.
 
-First, run the development server:
+This portfolio showcases:
+- Web development skills
+- Backend engineering
+- Blockchain & Web3 experience
+- Modern UI/UX design
+- Interactive animations
+- Full-stack architecture
+
+---
+
+# Tech Stack
+
+## Frontend
+- Next.js 16
+- TypeScript
+- TailwindCSS
+- Framer Motion
+
+## Backend
+- Supabase
+
+## Web3
+- Solidity
+- Smart Contracts
+- Web3 Architecture
+
+---
+
+# Features
+
+- Modern futuristic UI
+- Responsive design
+- Animated sections
+- BrainMode interactive experience
+- Dynamic particle background
+- Project showcase section
+- Experience timeline
+- Contact form with Supabase backend
+- SEO optimized structure
+- Performance optimized
+- Mobile friendly
+
+---
+
+# BrainMode
+
+BrainMode is a custom immersive UI experience that enhances the portfolio with:
+- Cursor glow effects
+- Floating tech words
+- Interactive futuristic atmosphere
+- Advanced motion effects
+
+---
+
+# Folder Structure
+
+```bash
+src/
+│
+├── app/
+├── components/
+│   ├── layout/
+│   ├── sections/
+│   ├── ui/
+│   └── effects/
+│
+├── hooks/
+├── lib/
+├── services/
+├── styles/
+├── types/
+├── utils/
+└── constants/
+```
+
+---
+
+# Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/miki-portfolio.git
+```
+
+Move into the project:
+
+```bash
+cd miki-portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+# Environment Variables
 
-To learn more about Next.js, take a look at the following resources:
+Create a `.env.local` file:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+# Build For Production
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+# Deployment
+
+Recommended platform:
+- Vercel
+
+---
+
+# Current Status
+
+This portfolio is continuously evolving and will later include:
+- Real production projects
+- Blockchain applications
+- SkillChain integration
+- Web3 engineering case studies
+
+---
+
+# Author
+
+Miki  
+Backend & Web3 Developer
+
+- GitHub: https://github.com/bmhmm
+- Telegram: https://t.me/MICHAEL_0px
+- Email: mikibacha45@gmail.com
+
+---
+
+# License
+
+MIT License
